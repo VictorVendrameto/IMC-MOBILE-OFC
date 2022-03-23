@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="imc_ofc.MainPage">
+
+    <StackLayout>
+        <Label Text="IMC" FontSize="70" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txt_peso" Placeholder="Peso" PlaceholderColor="Blue"/>
+        <Entry x:Name="txt_altura" Placeholder="Altura" PlaceholderColor="Blue"/>
+
+
+        <Button x:Name="ver" Text="Calcular IMC" Clicked="Button_Clicked"/>
+
+
+        <Grid ColumnDefinitions="*, *"  RowDefinitions="*, *, *, *, *, *, *" BackgroundColor="Gray">
+            <Label Grid.Row="0" Grid.Column="0" Text="CLASSIFICAÇÃO" FontSize="25" TextColor="Black"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="IMC" FontSize="25" TextColor="Black"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Abaixo do Peso" TextColor="Black"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="Abaixo 18,5" TextColor="Black"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Peso Normal" TextColor="Black"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="18,5 - 24,9" TextColor="Black"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Sobrepeso" TextColor="Black"/>
+            <Label Grid.Row="3" Grid.Column="1" Text="25 - 29,9" TextColor="Black"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Obesidade Grau I" TextColor="Black"/>
+            <Label Grid.Row="4" Grid.Column="1" Text="30 - 34,9" TextColor="Black"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="Obesidade Grau II" TextColor="Black"/>
+            <Label Grid.Row="5" Grid.Column="1" Text="35 - 39,9" TextColor="Black"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Text="Obesidade Grau III" TextColor="Black"/>
+            <Label Grid.Row="6" Grid.Column="1" Text="Maior ou Igual 40" TextColor="Black"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
